@@ -14,8 +14,11 @@
  */
 function find(array, callback) {
   for (let element of array) {
-    // Write your code here.
+     if( callback(element) ){
+       return element
+     }
   }
+  return undefined;
 }
 
 /**
@@ -32,10 +35,30 @@ function find(array, callback) {
  *  filter([1, 2, 3], (element) => element < 0);
  *  //> []
  */
+
+// const callback = (bool) => {
+//   if(!!bool){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+
+// const truthyValue = callback(' ')
+
+console.log('Value for callback evaulation:', truthyValue)
+const falseyValue = callback('')
+
+
 function filter(array, callback) {
   const result = [];
   for (let element of array) {
     // Write your code here.
+    if( callback(element) ){
+      result.push(element)
+    }
+
   }
   return result;
 }
