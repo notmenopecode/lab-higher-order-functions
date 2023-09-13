@@ -14,7 +14,7 @@
  */
 function find(array, callback) {
   for (let element of array) {
-    // Write your code here.
+
   }
 }
 
@@ -32,12 +32,23 @@ function find(array, callback) {
  *  filter([1, 2, 3], (element) => element < 0);
  *  //> []
  */
+
+// const callback = (bool) => {
+//   if(!!bool){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+
+
+
 function filter(array, callback) {
   const result = [];
   for (let element of array) {
     // Write your code here.
   }
-  return result;
 }
 
 /**
@@ -48,7 +59,7 @@ function filter(array, callback) {
  *
  * EXAMPLE:
  *  map([1, 2, 3], (element) => element + 10);
- *  //> [11, 12, 13]
+ *  //> , 12, 13]
  *
  * EXAMPLE:
  *  map([], (element) => element < 0);
